@@ -1,0 +1,22 @@
+{
+  "name": "login-and-register-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd login-and-register-frontend && npm run build",
+    "install-login-and-register-frontend": "cd login-and-register-frontend && npm install",
+    "heroku-postbuild": "npm run install-login-and-register-frontend && npm run build",
+    "start": "node index.js",
+    "login-and-register-frontend": "cd login-and-register-frontend && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10"
+  }
+}
